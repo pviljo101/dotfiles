@@ -170,9 +170,9 @@ bindsym $mod+Print              exec --no-startup-id gnome-screenshot -a
 bindsym $mod+Shift+x            exec --no-startup-id i3lock-fancy -f Source-Sans-Pro
 
 # volume
-bindsym XF86AudioLowerVolume    exec --no-startup-id amixer -q -D pulse sset Master 5%- unmute
-bindsym XF86AudioRaiseVolume    exec --no-startup-id amixer -q -D pulse sset Master 5%+ unmute
-bindsym XF86AudioMute           exec --no-startup-id amixer -q -D pulse sset Master toggle
+bindsym XF86AudioLowerVolume    exec --no-startup-id amixer -q sset Master 5%- unmute
+bindsym XF86AudioRaiseVolume    exec --no-startup-id amixer -q sset Master 5%+ unmute
+bindsym XF86AudioMute           exec --no-startup-id amixer -q sset Master toggle
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
